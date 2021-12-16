@@ -1,7 +1,5 @@
 import openpyxl_dictreader
 
-reader = openpyxl_dictreader.DictReader("test.xlsx", "Sheet1")
-
 """
 input:
 
@@ -24,5 +22,8 @@ expected output:
 """
 
 if __name__ == "__main__":
+    reader = openpyxl_dictreader.DictReader("test.xlsx", "Sheet1")
+
     for row in reader:
         print(row)
+        
